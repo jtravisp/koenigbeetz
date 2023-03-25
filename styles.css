@@ -66,14 +66,17 @@ body {
 }
 
 .rhythm {
-    width: calc(100% / 3); /* Change this line to divide the available space equally */
+    flex: 1;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 100px; /* Increase the note size */
+    font-size: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
 
 
 button {

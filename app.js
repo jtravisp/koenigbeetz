@@ -5,7 +5,9 @@ function allowDrop(ev) {
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
     ev.dataTransfer.setData("symbol", ev.target.dataset.symbol);
+    ev.dataTransfer.setData("duration", ev.target.dataset.duration);
 }
+
 
 function drop(ev) {
     ev.preventDefault();
