@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Teacher App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> <!-- Add this line to import the font -->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <h1 class="title">KoenigBeetz</h1>
+    
+    <div class="container">
+        <div class="staff">
+            <div class="beat" id="beat1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="beat" id="beat2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="beat" id="beat3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="beat" id="beat4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="rhythms">
+            <div class="rhythm" id="quarterNote" draggable="true" ondragstart="drag(event)" data-symbol="♩">♩</div>
+            <div class="rhythm" id="eighthNote" draggable="true" ondragstart="drag(event)" data-symbol="♪">♪</div>
+            <div class="rhythm" id="sixteenthNote" draggable="true" ondragstart="drag(event)" data-symbol="♬">♬</div>
+            <!-- Add more rhythm elements as needed -->
+        </div>
+        
+        <button id="clearButton" onclick="clearBoxes()">Clear</button>
+    </div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
